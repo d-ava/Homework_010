@@ -21,7 +21,7 @@
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/ivTitle"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:background="@color/name_background"
         android:gravity="center"
         android:textColor="@color/white"
@@ -30,21 +30,25 @@
         app:layout_constraintBottom_toTopOf="@id/ivDescription"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tool:text="Image Name" />
+        tool:text="Title"
+
+        />
 
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/ivDescription"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:background="@color/description_background"
         android:gravity="center"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tool:text="Description" />
+        tool:text="Description"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
