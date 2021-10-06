@@ -16,12 +16,6 @@ class ViewPagerAdapter() :
         notifyDataSetChanged()
 
 
-        /* private val userList = mutableListOf<User>()
-
-         fun setData(userList: MutableList<User>) {
-             this.userList.clear()
-             this.userList.addAll(userList)
-             notifyDataSetChanged()*/
 
 
     }
@@ -38,7 +32,8 @@ class ViewPagerAdapter() :
             binding.ivTitle.text = item.title
             binding.ivDescription.text = item.description
             binding.image.setImageResource(item.image)
-            binding.ivNumbers.text = "#${adapterPosition + 1} from ${list.size}" //to resources. how? have to google
+            binding.ivNumbers.text = "#${adapterPosition + 1} from ${list.size}" //to resources. later.
+                                                                                // https://developer.android.com/guide/topics/resources/string-resource
 
         }
 
