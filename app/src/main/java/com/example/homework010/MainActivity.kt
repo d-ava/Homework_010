@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        viewPagerAdapter.setData(itemList)
+        viewPagerAdapter.setData(itemList)  //set data to viewPagerAdapter.
         // val indicator = binding.CircularIndicator  //in case we need to implement circular indicator.
         binding.ViewPager2.adapter = viewPagerAdapter
         binding.ViewPager2.orientation = ViewPager2.ORIENTATION_VERTICAL //default is horizontal
