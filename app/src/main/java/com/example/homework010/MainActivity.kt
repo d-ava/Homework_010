@@ -13,10 +13,11 @@ class MainActivity : AppCompatActivity() {
     private val viewPagerAdapter = ViewPagerAdapter()
 
     private val itemList = mutableListOf<ItemData>(
-        ItemData(image.birds, "Birds", "birds sitting on the roof"),
         ItemData(image.cat, "Cat", "this was evil cat indeed"),
+        ItemData(image.man, "Man on the bench", "lisbon, very hot day of july"),
+        ItemData(image.cat2, "Cat", "this was evil cat indeed"),
         ItemData(image.birds, "Birds", "birds sitting on the roof"),
-        ItemData(image.birds, "Birds", "birds sitting on the roof")
+        ItemData(image.bikes, "Bikes", "I don't believe in Peter Pan")
     )
 
 
@@ -30,11 +31,10 @@ class MainActivity : AppCompatActivity() {
 
 
         viewPagerAdapter.setData(itemList)
-        val indicator = binding.CircularIndicator
-
+        // val indicator = binding.CircularIndicator  //in case we need to implement circular indicator.
         binding.ViewPager2.adapter = viewPagerAdapter
-        binding.ViewPager2.orientation = ViewPager2.ORIENTATION_VERTICAL //default
+        binding.ViewPager2.orientation = ViewPager2.ORIENTATION_VERTICAL //default is horizontal
 
-        indicator.setViewPager(binding.ViewPager2)
+        // indicator.setViewPager(binding.ViewPager2) //in case we need to implement circular indicator
     }
 }

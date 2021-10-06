@@ -7,13 +7,12 @@
     tools:context=".MainActivity">
 
 
-
-
     <me.relex.circleindicator.CircleIndicator3
         android:id="@+id/CircularIndicator"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/C"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="12:1"
         app:layout_constraintEnd_toEndOf="parent"
