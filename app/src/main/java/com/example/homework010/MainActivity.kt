@@ -13,9 +13,9 @@ class MainActivity : AppCompatActivity() {
     private val viewPagerAdapter = ViewPagerAdapter()
 
     private val itemList = mutableListOf<ItemData>(
-        ItemData(image.cat, "Cat", "this was evil cat indeed"),
+        ItemData(image.cat, "Cat", "this is evil cat indeed"),
         ItemData(image.man, "Man on the bench", "lisbon, very hot day of july"),
-        ItemData(image.cat2, "Cat2", "this was evil cat indeed"),
+        ItemData(image.cat2, "Cat2", "this was evil cat"),
         ItemData(image.birds, "Birds", "birds sitting on the roof"),
         ItemData(image.bikes, "Bikes", "I don't believe in Peter Pan")
     )
